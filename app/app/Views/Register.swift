@@ -17,7 +17,11 @@ struct Register: View {
             TextField("Name", text: $name)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
-                .foregroundColor(isDark ? Color.purple : Color.blue)
+//                .overlay(
+//                        RoundedRectangle(cornerRadius: 14)
+//                            .stroke(Color.green)
+//                    )
+                .foregroundColor(isDark ? Color.white : Color.black)
             TextField("Email", text: $email)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
