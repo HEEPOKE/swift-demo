@@ -1,3 +1,3 @@
-# swift-demo
+# app
 
 A description of this package.

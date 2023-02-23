@@ -1,8 +1,8 @@
 @main
-public struct swift_demo {
+public struct app {
     public private(set) var text = "Hello, World!"
 
     public static func main() {
-        print(swift_demo().text)
+        print(app().text)
     }
 }
