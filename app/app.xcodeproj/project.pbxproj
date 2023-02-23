@@ -14,6 +14,8 @@
 		C1FD060929A758EB00A6545C /* appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD060829A758EB00A6545C /* appTests.swift */; };
 		C1FD061329A758EC00A6545C /* appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD061229A758EC00A6545C /* appUITests.swift */; };
 		C1FD061529A758EC00A6545C /* appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD061429A758EC00A6545C /* appUITestsLaunchTests.swift */; };
+		C1FD062529A760EE00A6545C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD062429A760EE00A6545C /* User.swift */; };
+		C1FD062829A7619F00A6545C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD062729A7619F00A6545C /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		C1FD060E29A758EC00A6545C /* appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1FD061229A758EC00A6545C /* appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appUITests.swift; sourceTree = "<group>"; };
 		C1FD061429A758EC00A6545C /* appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C1FD062429A760EE00A6545C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C1FD062729A7619F00A6545C /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 		C1FD05F629A758E400A6545C /* app */ = {
 			isa = PBXGroup;
 			children = (
+				C1FD062629A7618200A6545C /* Views */,
+				C1FD062329A760CE00A6545C /* Models */,
 				C1FD05F729A758E400A6545C /* appApp.swift */,
 				C1FD05F929A758E400A6545C /* ContentView.swift */,
 				C1FD05FB29A758EB00A6545C /* Assets.xcassets */,
@@ -125,6 +131,22 @@
 				C1FD061429A758EC00A6545C /* appUITestsLaunchTests.swift */,
 			);
 			path = appUITests;
+			sourceTree = "<group>";
+		};
+		C1FD062329A760CE00A6545C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C1FD062429A760EE00A6545C /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C1FD062629A7618200A6545C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C1FD062729A7619F00A6545C /* Home.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +281,8 @@
 			files = (
 				C1FD05FA29A758E400A6545C /* ContentView.swift in Sources */,
 				C1FD05F829A758E400A6545C /* appApp.swift in Sources */,
+				C1FD062829A7619F00A6545C /* Home.swift in Sources */,
+				C1FD062529A760EE00A6545C /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
