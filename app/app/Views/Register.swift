@@ -11,9 +11,13 @@ struct Register: View {
         let isDark = colorScheme == .dark
         
         VStack {
+            Text("Register")
+                  .bold()
+                  .padding([.vertical])
             TextField("Name", text: $name)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
+                .foregroundColor(isDark ? Color.purple : Color.blue)
             TextField("Email", text: $email)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
@@ -23,13 +27,15 @@ struct Register: View {
             SecureField("Confirm Password", text: $confirmPassword)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
-            Button("Register") {
-             
+            Button("Submit") {
+                
             }
+            .font(.headline)
             .padding()
-            .background(Color.blue)
-            .foregroundColor(.white)
+            .foregroundColor(isDark ? .white : .white)
+            .background(isDark ? Color.purple : Color.blue)
             .cornerRadius(5)
+            .shadow(radius: 5)
         }
         .padding()
         .background(isDark ? Color.black : Color.white)
@@ -37,11 +43,9 @@ struct Register: View {
     }
 }
 
-
-
-
 struct Register_Previews: PreviewProvider {
     static var previews: some View {
         Register()
     }
 }
+
