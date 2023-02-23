@@ -1,0 +1,25 @@
+# macOS folder
+.DS_Store
+
+# Xcode folders
+/*app.xcodeproj/project.xcworkspace/xcuserdata/
+/*app.xcodeproj/xcuserdata/
+
+
+# Build products
+build/
+DerivedData/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Swift Package Manager
+.build/
+
+# Carthage
+Carthage/Build/
+
+# Other
+*.swp
+Thumbs.db
