@@ -4,7 +4,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
-                .imageScale(.large)
+                .font(.system(size: 40))
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
         }
@@ -13,7 +13,7 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View { 
+    static var previews: some View {
         ContentView()
     }
 }

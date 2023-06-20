@@ -12,34 +12,35 @@ struct Register: View {
         
         VStack {
             Text("Register")
-                  .bold()
-                  .padding([.vertical])
+                .bold()
+                .padding([.vertical])
+            
             TextField("Name", text: $name)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
-//                .overlay(
-//                        RoundedRectangle(cornerRadius: 14)
-//                            .stroke(Color.green)
-//                    )
                 .foregroundColor(isDark ? Color.white : Color.black)
+            
             TextField("Email", text: $email)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
+            
             SecureField("Password", text: $password)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
+            
             SecureField("Confirm Password", text: $confirmPassword)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
-            Button("Submit") {
-                
+            
+            Button(action: {}) {
+                Text("Submit")
+                    .font(.headline)
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(isDark ? Color.purple : Color.blue)
+                    .cornerRadius(5)
+                    .shadow(radius: 5)
             }
-            .font(.headline)
-            .padding()
-            .foregroundColor(isDark ? .white : .white)
-            .background(isDark ? Color.purple : Color.blue)
-            .cornerRadius(5)
-            .shadow(radius: 5)
         }
         .padding()
         .background(isDark ? Color.black : Color.white)
@@ -52,4 +53,3 @@ struct Register_Previews: PreviewProvider {
         Register()
     }
 }
-
